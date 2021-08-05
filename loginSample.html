@@ -1,0 +1,163 @@
+<DOCTYPE html>
+<html>
+<body>
+
+<style type="text/css">
+
+body{
+
+	background-color: black;
+
+}
+.box{
+	width: 250px;
+	height: 400px;
+	box-shadow: 1px 1px 8px black, -2px -2px 8px red;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.btn {
+	width: 100px;
+	height: 50px;
+	margin: auto;
+	margin-top: 30px;
+	background-color: transparent;
+	outline: none;
+	border:none;
+	box-shadow: 1px 1px 8px black, 1px 1px 10px red;
+	color: white;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: sanserif;
+	
+	
+}
+h2{
+	padding-top: 80px;
+	color: red;
+}
+.dv{
+	margin-top: 40px;
+}
+.meme{
+
+	box-shadow: 1px 1px 8px black, -2px -2px 8px cyan;
+
+}
+.font{
+	color: cyan;
+}
+
+.txt{
+	width: 100px;
+	height: 50px;
+	margin: auto;
+	margin-top: 30px;
+	background-color: transparent;
+	outline: none;
+	border:none;
+	box-shadow: 1px 1px 8px black, 1px 1px 10px red;
+	color: white;
+	border-radius: 10px;
+	padding: 0px 0px 0px 20px;
+	font-family: sanserif;
+}
+
+button {
+
+	margin-top: 30px;
+	width: 100px;
+	height: 50px;
+	margin: auto;
+	margin-top: 30px;
+	background-color: transparent;
+	outline: none;
+	border:none;
+	box-shadow: 1px 1px 8px black, 1px 1px 10px red;
+	color: white;
+	border-radius: 10px;
+	padding: 0px 0px 0px 5px;
+	font-family: sanserif;
+
+}
+
+
+</style>
+
+
+
+
+<div class="box" id="box">
+<center>
+<h2 id="i">HELLO</h2>
+<input class="txt"  id="txt" type="text" placeholder="Username" required>
+<input class="txt" id="txt" type="text" placeholder="Username" required>
+
+<div class="dv">
+<input id="dd" class="btn" type="Submit" onclick="bsit1()" value="Login">
+</center>
+</center>
+</div>
+<center>
+
+
+</div>
+
+<button id="left" onclick="left()">Left</button>
+<button id="right" onclick="right()">Right</button>
+<br>
+<button id="center" onclick="center()">Center</button>
+<script type="text/javascript">
+
+	function bsit1(){
+	
+		var d = document.getElementById('box');
+		var txt = document.getElementById('txt');
+		var h = document.getElementById('i');
+		var dd= document.getElementById('dd');
+		
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var cent = document.getElementById('center');
+		
+		
+		d.classList.toggle('meme');
+		i.classList.toggle('font');
+		dd.classList.toggle('meme');
+		left.classList.toggle('meme');
+		right.classList.toggle('meme');
+		txt.classList.toggle('meme');
+		cent.classList.toggle('meme');
+		
+	
+	}
+	function left(){
+		var usod = document.getElementById('box');
+		
+		usod.style.transform = "translateX(-20%)";
+	}
+	
+	function right(){
+		var usod = document.getElementById('box');
+		
+		usod.style.transform = "translateX(20%)";
+	}
+	
+	function center(){
+	var usod = document.getElementById('box');
+	
+	usod.style.transform = "translateX(0%)";
+	}
+	
+	
+
+
+</script>
+
+
+
+</body>
+
+</html>
